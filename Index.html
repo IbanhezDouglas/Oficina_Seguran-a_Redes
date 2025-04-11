@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirecionando...</title>
+</head>
+<body>
+  <h2>Redirecionando para o formulário...</h2>
+
+  <script>
+    fetch("https://api.ipify.org?format=json")
+      .then(res => res.json())
+      .then(data => {
+        console.log("IP do usuário:", data.ip);
+
+        // Redireciona para o Google Forms
+        window.location.href = "https://docs.google.com/forms/d/https://docs.google.com/forms/d/19wqQKysm8gvDszXxg1WSLWpFETfrbLf1D7k1wJIbsIk/edit#settings";
+      });
+  </script>
+</body>
+</html>
